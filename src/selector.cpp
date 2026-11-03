@@ -6,7 +6,7 @@
 #include <cstdio>
 #include <vector>
 
-LV_IMAGE_DECLARE(steamhappy);
+LV_IMAGE_DECLARE(newjeans);
 
 namespace {
 const lv_color_t BACKGROUND = lv_color_hex(0x111111);
@@ -65,7 +65,7 @@ void refresh() {
     lv_label_set_text(allianceLabel, red ? "RED" : "BLUE");
 
     const Auton& auton = autons[selected];
-    lv_image_set_src(previewImage, auton.image ? auton.image : &steamhappy);
+    lv_image_set_src(previewImage, auton.image ? auton.image : &newjeans);
     lv_label_set_text(nameLabel, auton.name);
     lv_label_set_text(descriptionLabel, auton.description);
 }
